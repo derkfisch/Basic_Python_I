@@ -38,3 +38,37 @@ print("Hello\n\tmy name is Derek") #Hello
 #raw string
 print(r"Hello\n\tmy name is Derek") #Hello\n\tmy name is Derek
 
+#string concatenation
+first_name = 'Derek'
+last_name = 'Fischer'
+
+full_name = first_name + ' ' + last_name
+print(full_name) #Derek Fischer
+
+full_name += ", Jr."
+print(full_name) #Derek Fischer, Jr.
+
+num_a = 10
+num_b = '10'
+#num_c = num_a + num_b will throw an error because num_a is an int and num_b is a str
+
+#type conversion
+
+print(type(num_b)) #<class 'str'>
+
+#str to int
+num_b_int = int(num_b)
+print(num_b_int) #10
+print(type(num_b_int)) #<class 'int'>
+
+num_c = num_a + num_b_int
+print(num_c) #20
+
+#int to str
+num_as_a_str = str(num_a)
+print(num_as_a_str) #10
+print(type(num_as_a_str)) #<class 'str'>
+
+num_c = num_as_a_str + num_b
+print(num_c) #1010
+
