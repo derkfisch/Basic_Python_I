@@ -72,3 +72,23 @@ print(type(num_as_a_str)) #<class 'str'>
 num_c = num_as_a_str + num_b
 print(num_c) #1010
 
+#.format() and f-strings
+
+name = 'Derek'
+home = 'Las Vegas'
+age = 27
+
+print('Hello my name is {}, I am from {}!'.format(name,home)) #Hello my name is Derek, I am from Las Vegas!
+print(f'Hello my name is {name}, I am {age} years old and from {home}!') #Hello my name is Derek, I am 27 years old and from Las Vegas!
+
+#boolean
+
+bool_true = True
+
+print(bool_true) #True
+print(type(bool_true)) #<class 'bool'>
+
+bool_false = False
+
+print(bool_false) #False
+print(type(bool_false)) #<class 'bool'>
